@@ -1,4 +1,4 @@
-from enums import Enum
+from enum import Enum
 
 
 class FileType(Enum):
@@ -9,3 +9,8 @@ class FileType(Enum):
 class EmbeddingsService(Enum):
     COHERE = "cohere"
     GEMINI = "gemini"
+
+
+class VectorStoreService(Enum):
+    PGVECTOR = "pgvector"
+    MILVUS = "milvus"

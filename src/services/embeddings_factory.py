@@ -20,7 +20,7 @@ class EmbeddingsFactory:
         elif embeddings_service == EmbeddingsService.GEMINI.value:
             return GoogleGenerativeAIEmbeddings(
                 model=os.environ["GEMINI_EMBEDDING_MODEL_NAME"],
-                google_api_key=os.environ["GOOGLE_API_KEY"],
+                google_api_key=os.environ["GEMINI_API_KEY"],
             )
         else:
             raise ValueError("Unsupported embeddings service")

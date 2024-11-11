@@ -1,24 +1,21 @@
 import os
 from typing import List
 
-from langchain_postgres.vectorstores import PGVector
-
 from src.doc_reader.parquet_reader import ParquetReader
 from src.doc_reader.pdf_reader import PDFReader
 
-from .services.embeddings_factory import EmbeddingsFactory
 from .enums import FileType
+from .services.embeddings_factory import EmbeddingsFactory
+from .services.vectorstore_factory import VectorStoreFactory
 
 
 class Ingestion:
-    def __init__(self, embeddings_service: str):
+    def __init__(self, embeddings_service: str, vectorstore_service: str) -> None:
         self.embeddings = EmbeddingsFactory.get_embeddings(embeddings_service)
 
-        self.vector_store = PGVector(
+        self.vector_store = VectorStoreFactory.get_vectorstore(
+            vectorstore_service=vectorstore_service,
             embeddings=self.embeddings,
-            collection_name="docstore",
-            connection=os.environ["DATABASE_URI"],
-            use_jsonb=True,
         )
 
     def ingest_document(
@@ -42,9 +39,21 @@ class Ingestion:
                     sub_category=sub_category,
                     exclude_columns=exclude_columns,
                 )
-            _ids = self.vector_store.add_documents(documents=docs, ids=ids)
+            _ids = []
+            try:
+                _ids = self.vector_store.add_documents(documents=docs, ids=ids)
+            except Exception:
+                chunk_size = 500
+                for i in range(0, len(docs), chunk_size):
+                    chunk_docs = docs[i : i + chunk_size]
+                    chunk_ids = ids[i : i + chunk_size]
+                    _ids.extend(
+                        self.vector_store.add_documents(
+                            documents=chunk_docs, ids=chunk_ids
+                        )
+                    )
             if _ids != ids:
-                raise ValueError("Failed to ingest all documents")
+                raise ValueError("Failed to add documents to vectorstore")
         except ValueError as e:
             raise e
 
