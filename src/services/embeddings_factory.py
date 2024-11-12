@@ -1,5 +1,6 @@
 import os
 import logging
+import colorlog
 from typing import Union
 
 from langchain_cohere.embeddings import CohereEmbeddings
@@ -8,6 +9,13 @@ from langchain_google_genai.embeddings import GoogleGenerativeAIEmbeddings
 from ..enums import EmbeddingsService
 
 logger = logging.getLogger(__name__)
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[logging.StreamHandler()],
+)
+
+
 class EmbeddingsFactory:
     @staticmethod
     def get_embeddings(

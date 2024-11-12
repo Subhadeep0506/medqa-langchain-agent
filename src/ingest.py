@@ -1,6 +1,7 @@
 import os
 import time
 import logging
+import colorlog
 from typing import List
 
 from src.doc_reader.parquet_reader import ParquetReader
@@ -9,10 +10,31 @@ from src.doc_reader.pdf_reader import PDFReader
 from .enums import FileType
 from .services.embeddings_factory import EmbeddingsFactory
 from .services.vectorstore_factory import VectorStoreFactory
+
 logger = logging.getLogger(__name__)
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[logging.StreamHandler()],
+)
+
 
 class Ingestion:
     def __init__(self, embeddings_service: str, vectorstore_service: str) -> None:
+        """
+        Initializes the ingestion process with the specified embeddings and vector store services.
+        Args:
+            embeddings_service (str): The name of the embeddings service to use.
+                Valid options include:
+                - 'cohere
+                - 'gemini
+            vectorstore_service (str): The name of the vector store service to use.
+                Valid options include:
+                - 'pgvector'
+                - 'milvus'
+        Raises:
+            ValueError: If an invalid embeddings_service or vectorstore_service is provided.
+        """
         self.embeddings = EmbeddingsFactory.get_embeddings(embeddings_service)
 
         self.vector_store = VectorStoreFactory.get_vectorstore(
@@ -30,9 +52,17 @@ class Ingestion:
         self.file_path = file_path
         try:
             self.doc_reader = self.__get_reader_by_filetype()
+            _ids = []
             if isinstance(self.doc_reader, PDFReader):
                 docs, ids = self.doc_reader.load_document(
-                    file_path, category=category, sub_category=sub_category
+                    file_path,
+                    category=category,
+                    sub_category=sub_category,
+                )
+                logger.log(logging.INFO, "Ingesting document to vectorstore")
+                _ids = self.vector_store.add_documents(
+                    documents=docs,
+                    ids=ids,
                 )
             elif isinstance(self.doc_reader, ParquetReader):
                 docs, ids = self.doc_reader.load_document(
@@ -41,27 +71,23 @@ class Ingestion:
                     sub_category=sub_category,
                     exclude_columns=exclude_columns,
                 )
-            _ids = []
-            try:
-                logger.log(logging.INFO, "Ingesting document to vectorstore")
-                _ids = self.vector_store.add_documents(documents=docs, ids=ids)
-            except Exception:
-                logger.log(logging.INFO, "Ingestion failed. Trying chuked ingestion.")
-                chunk_size = 500
+                logger.log(
+                    logging.INFO, "Ingesting document to vectorstore using chunks."
+                )
+                chunk_size = 100
                 for i in range(0, len(docs), chunk_size):
                     chunk_docs = docs[i : i + chunk_size]
                     chunk_ids = ids[i : i + chunk_size]
-                    logger.log(logging.INFO, "\tChunk Ingested.")
                     _ids.extend(
                         self.vector_store.add_documents(
-                            documents=chunk_docs, ids=chunk_ids
+                            documents=chunk_docs,
+                            ids=chunk_ids,
                         )
                     )
+                    logger.log(logging.INFO, "\tChunk Ingested.")
                     time.sleep(60)
-            if _ids != ids:
-                logger.log(logging.ERROR, "Ids are not matching")
         except Exception as e:
-            logger.log(logging.ERROR, "Ingestion failed.")
+            logger.error("Ingestion failed. Error: %s", e)
 
     def __get_reader_by_filetype(self) -> PDFReader | ParquetReader:
         extension = str(os.path.basename(self.file_path)).split(".")[-1].lower()

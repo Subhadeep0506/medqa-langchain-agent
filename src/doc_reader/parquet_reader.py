@@ -33,41 +33,46 @@ class ParquetReader(BaseDocumentReader):
             FileNotFoundError: If the specified file_path does not exist.
             ValueError: If the parquet file does not contain the required columns.
         """
-        self.file_name = os.path.basename(file_path)
-        data = pd.read_parquet(file_path, columns=["input", "output"], engine="pyarrow")
-        excluded_columns = kwargs.get("exclude_columns", None)
-        text_splitter = CharacterTextSplitter(
-            separator="\n",
-            chunk_size=2000,
-            chunk_overlap=200,
-        )
-        self.total_pages = len(data)
-        chunks = []
-        ids = []
-        for idx, page in data.iterrows():
-            chunks.append(
-                Document(
-                    page_content="\n\n".join(
-                        [
-                            f"{column}: {page[column]}"
-                            for column in page.index
-                            if excluded_columns and column not in excluded_columns
-                        ]
-                    ),
-                    metadata=dict(
-                        {
-                            "file_name": self.file_name,
-                            "page_no": str(idx + 1),
-                            "total_pages": str(self.total_pages),
-                            "category": category,
-                            "sub_category": sub_category,
-                        }
-                    ),
+        try:
+            self.file_name = os.path.basename(file_path)
+            data = pd.read_parquet(file_path, engine="pyarrow")
+            excluded_columns = kwargs.get("exclude_columns", None)
+            text_splitter = CharacterTextSplitter(
+                separator="\n",
+                chunk_size=2000,
+                chunk_overlap=200,
+            )
+            self.total_pages = len(data)
+            chunks = []
+            ids = []
+            for idx, page in data.iterrows():
+                chunks.append(
+                    Document(
+                        page_content="\n\n".join(
+                            [
+                                f"{column}: {page[column]}"
+                                for column in page.index
+                                if excluded_columns and column not in excluded_columns
+                            ]
+                        ),
+                        metadata=dict(
+                            {
+                                "file_name": self.file_name,
+                                "page_no": str(idx + 1),
+                                "total_pages": str(self.total_pages),
+                                "category": category,
+                                "sub_category": sub_category,
+                            }
+                        ),
+                    )
                 )
-            )
-            ids.append(
-                sha256((chunks[-1].page_content + str(idx + 1)).encode()).hexdigest()
-            )
-
-        final_chunks = text_splitter.split_documents(chunks)
-        return final_chunks, ids
+            final_chunks = text_splitter.split_documents(chunks)
+            ids = [
+                sha256(
+                    (chunk.page_content + chunk.metadata["page_no"]).encode()
+                ).hexdigest()
+                for chunk in final_chunks
+            ]
+            return final_chunks, ids
+        except FileNotFoundError as e:
+            raise FileNotFoundError(f"File not found: {file_path}") from e

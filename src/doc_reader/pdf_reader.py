@@ -43,7 +43,12 @@ class PDFReader(BaseDocumentReader):
                     ),
                 )
             )
-            ids.append(sha256((page.page_content + str(idx + 1)).encode()).hexdigest())
 
         final_chunks = text_splitter.split_documents(chunks)
+        ids = [
+            sha256(
+                (chunk.page_content + chunk.metadata["page_no"]).encode()
+            ).hexdigest()
+            for chunk in final_chunks
+        ]
         return final_chunks, ids
