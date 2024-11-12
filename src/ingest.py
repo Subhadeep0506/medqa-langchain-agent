@@ -1,22 +1,16 @@
 import os
 import time
-import logging
-import colorlog
 from typing import List
 
 from src.doc_reader.parquet_reader import ParquetReader
 from src.doc_reader.pdf_reader import PDFReader
+from src.services.logger_service import LoggerService
 
 from .enums import FileType
 from .services.embeddings_factory import EmbeddingsFactory
 from .services.vectorstore_factory import VectorStoreFactory
 
-logger = logging.getLogger(__name__)
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    handlers=[logging.StreamHandler()],
-)
+logger = LoggerService.get_logger(__name__)
 
 
 class Ingestion:
@@ -35,6 +29,7 @@ class Ingestion:
         Raises:
             ValueError: If an invalid embeddings_service or vectorstore_service is provided.
         """
+        LoggerService.log_system_info()
         self.embeddings = EmbeddingsFactory.get_embeddings(embeddings_service)
 
         self.vector_store = VectorStoreFactory.get_vectorstore(
@@ -59,7 +54,7 @@ class Ingestion:
                     category=category,
                     sub_category=sub_category,
                 )
-                logger.log(logging.INFO, "Ingesting document to vectorstore")
+                logger.info("Ingesting document to vectorstore")
                 _ids = self.vector_store.add_documents(
                     documents=docs,
                     ids=ids,
@@ -71,9 +66,7 @@ class Ingestion:
                     sub_category=sub_category,
                     exclude_columns=exclude_columns,
                 )
-                logger.log(
-                    logging.INFO, "Ingesting document to vectorstore using chunks."
-                )
+                logger.info("Ingesting document to vectorstore using chunks.")
                 chunk_size = 100
                 for i in range(0, len(docs), chunk_size):
                     chunk_docs = docs[i : i + chunk_size]
@@ -84,7 +77,7 @@ class Ingestion:
                             ids=chunk_ids,
                         )
                     )
-                    logger.log(logging.INFO, "\tChunk Ingested.")
+                    logger.info("\tChunk Ingested.")
                     time.sleep(60)
         except Exception as e:
             logger.error("Ingestion failed. Error: %s", e)
@@ -92,10 +85,10 @@ class Ingestion:
     def __get_reader_by_filetype(self) -> PDFReader | ParquetReader:
         extension = str(os.path.basename(self.file_path)).split(".")[-1].lower()
         if extension == FileType.PDF.value:
-            logger.log(logging.INFO, "Using PDF Reader")
+            logger.info("Using PDF Reader")
             return PDFReader()
         elif extension == FileType.PARQUET.value:
-            logger.log(logging.INFO, "Using Parquet Reader")
+            logger.info("Using Parquet Reader")
             return ParquetReader()
         else:
             raise ValueError(f"Unsupported file type: {extension}")

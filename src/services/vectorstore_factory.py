@@ -1,21 +1,14 @@
 import os
-import logging
-import colorlog
 from typing import Union
 
 from langchain_milvus.vectorstores import Milvus
 from langchain_postgres.vectorstores import PGVector
-from pymilvus import Collection, connections, MilvusClient, DataType
+from pymilvus import DataType, MilvusClient
 
 from ..enums import VectorStoreService
+from .logger_service import LoggerService
 
-
-logger = logging.getLogger(__name__)
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    handlers=[logging.StreamHandler()],
-)
+logger = LoggerService.get_logger(__name__)
 
 
 class VectorStoreFactory:
@@ -25,7 +18,7 @@ class VectorStoreFactory:
         embeddings,
     ) -> Union[PGVector, Milvus]:
         if vectorstore_service == VectorStoreService.PGVECTOR.value:
-            logger.log(logging.INFO, "Using PGVector")
+            logger.info("Using PGVector")
             return PGVector(
                 embeddings=embeddings,
                 collection_name=os.environ["POSTGRES_COLLECTION_NAME"],
@@ -33,13 +26,13 @@ class VectorStoreFactory:
                 use_jsonb=True,
             )
         elif vectorstore_service == VectorStoreService.MILVUS.value:
-            logger.log(logging.INFO, "Using Milvus")
+            logger.info("Using Milvus")
             client = MilvusClient(
                 uri=os.environ["MILVUS_DATABASE_URI"],
                 token=os.environ["MILVUS_ACCESS_TOKEN"],
             )
             if not client.has_collection(os.environ["MILVUS_COLLECTION_NAME"]):
-                logger.log(logging.INFO, "Creating Milvus collection")
+                logger.info("Creating Milvus collection")
                 try:
                     schema = client.create_schema(
                         enable_dynamic_field=True, description=""
