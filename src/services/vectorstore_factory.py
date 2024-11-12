@@ -1,4 +1,5 @@
 import os
+import logging
 from typing import Union
 
 from langchain_milvus.vectorstores import Milvus
@@ -8,6 +9,8 @@ from pymilvus import Collection, connections
 from ..enums import VectorStoreService
 
 
+logger = logging.getLogger(__name__)
+
 class VectorStoreFactory:
     @staticmethod
     def get_vectorstore(
@@ -15,6 +18,7 @@ class VectorStoreFactory:
         embeddings,
     ) -> Union[PGVector, Milvus]:
         if vectorstore_service == VectorStoreService.PGVECTOR.value:
+            logger.log(logging.INFO, "Using PGVector")
             return PGVector(
                 embeddings=embeddings,
                 collection_name=os.environ["POSTGRES_COLLECTION_NAME"],
@@ -22,16 +26,13 @@ class VectorStoreFactory:
                 use_jsonb=True,
             )
         elif vectorstore_service == VectorStoreService.MILVUS.value:
-            connections.connect(
-                uri=os.environ["MILVUS_DATABASE_URI"],
-                token=os.environ["MILVUS_ACCESS_TOKEN"],
-            )
-            collection = Collection(name=os.environ["MILVUS_COLLECTION_NAME"])
+            logger.log(logging.INFO, "Using Milvus")
             return Milvus(
                 embedding_function=embeddings,
-                collection_name=collection,
+                collection_name=os.environ["MILVUS_COLLECTION_NAME"],
                 connection_args={
                     "uri": os.environ["MILVUS_DATABASE_URI"],
+                    "token":os.environ["MILVUS_ACCESS_TOKEN"],
                 },
             )
         else:
