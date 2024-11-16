@@ -11,6 +11,11 @@ class EmbeddingsService(Enum):
     GEMINI = "gemini"
 
 
+class LLMService(Enum):
+    COHERE = "cohere"
+    GEMINI = "gemini"
+
+
 class VectorStoreService(Enum):
     PGVECTOR = "pgvector"
     MILVUS = "milvus"

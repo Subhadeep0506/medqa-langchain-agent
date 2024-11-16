@@ -1,0 +1,15 @@
+[
+  {
+    "model": "command-r-plus",
+    "api_key": "481RrCzFPdfl0eTZWSLMApiw9TGWfjHAoK9BKerd",
+    "api_type": "cohere",
+    "client_name": "autogen-cohere",
+    "temperature": 0.3,
+    "p": 0.2,
+    "k": 100,
+    "max_tokens": 2048,
+    "seed": 42,
+    "frequency_penalty": 0.5,
+    "presence_penalty": 0.2
+  }
+]
