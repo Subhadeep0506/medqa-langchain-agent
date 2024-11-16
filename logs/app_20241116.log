@@ -312,3 +312,1105 @@
 2024-11-16 13:03:50 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
 2024-11-16 13:03:51 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
 2024-11-16 13:03:54 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 13:42:53 - root - INFO - Application Logger Initialized
+2024-11-16 13:42:53 - root - INFO - Log Directory: logs
+2024-11-16 13:42:53 - src.services.embeddings_factory - INFO - Using Cohere embeddings model.
+2024-11-16 13:42:53 - src.services.vectorstore_factory - INFO - Using Milvus
+2024-11-16 13:42:55 - pymilvus.milvus_client.milvus_client - DEBUG - Created new connection using: 2112ae627003494791cad2b017c70d5f
+2024-11-16 13:42:55 - src.services.vectorstore_factory - INFO - Creating Milvus collection
+2024-11-16 13:42:55 - pymilvus.milvus_client.milvus_client - DEBUG - Successfully created collection: docstore
+2024-11-16 13:42:57 - pymilvus.milvus_client.milvus_client - DEBUG - Successfully created an index on collection: docstore
+2024-11-16 13:42:57 - langchain_milvus.vectorstores.milvus - WARNING - DeprecationWarning: `metadata_field` is about to be deprecated, please set `enable_dynamic_field`=True instead.
+2024-11-16 13:42:58 - pymilvus.milvus_client.milvus_client - DEBUG - Created new connection using: ceed5d584e614aed9391135f81245b8d
+2024-11-16 13:43:00 - src.ingest - INFO - Using Parquet Reader
+2024-11-16 13:43:28 - langchain_text_splitters.base - WARNING - Created a chunk of size 3355, which is longer than the specified 2000
+2024-11-16 13:43:28 - langchain_text_splitters.base - WARNING - Created a chunk of size 5148, which is longer than the specified 2000
+2024-11-16 13:43:28 - langchain_text_splitters.base - WARNING - Created a chunk of size 2435, which is longer than the specified 2000
+2024-11-16 13:43:28 - langchain_text_splitters.base - WARNING - Created a chunk of size 3292, which is longer than the specified 2000
+2024-11-16 13:43:28 - langchain_text_splitters.base - WARNING - Created a chunk of size 5516, which is longer than the specified 2000
+2024-11-16 13:43:28 - langchain_text_splitters.base - WARNING - Created a chunk of size 2093, which is longer than the specified 2000
+2024-11-16 13:43:28 - langchain_text_splitters.base - WARNING - Created a chunk of size 2352, which is longer than the specified 2000
+2024-11-16 13:43:28 - langchain_text_splitters.base - WARNING - Created a chunk of size 2637, which is longer than the specified 2000
+2024-11-16 13:43:28 - langchain_text_splitters.base - WARNING - Created a chunk of size 2525, which is longer than the specified 2000
+2024-11-16 13:43:28 - langchain_text_splitters.base - WARNING - Created a chunk of size 3390, which is longer than the specified 2000
+2024-11-16 13:43:28 - langchain_text_splitters.base - WARNING - Created a chunk of size 2351, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2359, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2073, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 3527, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 3041, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 4392, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 3167, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2745, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2560, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2139, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2392, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2014, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2181, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2887, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2206, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2514, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2074, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2136, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2969, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2194, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2250, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2674, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2499, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2880, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 6143, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2446, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 3144, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2128, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2140, which is longer than the specified 2000
+2024-11-16 13:43:29 - langchain_text_splitters.base - WARNING - Created a chunk of size 2130, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2020, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2022, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2074, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2138, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2598, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 3333, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 3458, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2339, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 4592, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2156, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2036, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 3086, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2892, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2835, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2237, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2824, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2358, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2649, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 3197, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 4539, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2558, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2113, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2294, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2067, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2831, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2549, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2095, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2898, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2856, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 3348, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2575, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 3413, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 5128, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2184, which is longer than the specified 2000
+2024-11-16 13:43:30 - langchain_text_splitters.base - WARNING - Created a chunk of size 2418, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2778, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2497, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2763, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 3163, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2491, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2317, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2477, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2065, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2371, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2008, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 3136, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2388, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2234, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2496, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2231, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2418, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2405, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 4300, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2200, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2262, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 3145, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 7358, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2533, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2179, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2626, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2061, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2705, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2234, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2220, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 3459, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2079, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2301, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2056, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2744, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 2433, which is longer than the specified 2000
+2024-11-16 13:43:31 - langchain_text_splitters.base - WARNING - Created a chunk of size 6474, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2131, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2785, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2838, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2095, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2370, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2121, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 3144, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2048, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2206, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2184, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 3525, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2021, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2540, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2701, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2150, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2306, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2584, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2449, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2495, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 3002, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 3879, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2547, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2059, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2141, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2671, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2043, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2868, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2161, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 4407, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2178, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2200, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2384, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2089, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2015, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2660, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2338, which is longer than the specified 2000
+2024-11-16 13:43:32 - langchain_text_splitters.base - WARNING - Created a chunk of size 2649, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2434, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2796, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 6474, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2558, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 3084, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2029, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2060, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2688, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 4853, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2272, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2339, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2282, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 3210, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2336, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2011, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2359, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2266, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2167, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2461, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2993, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2309, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2322, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2874, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2222, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2253, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2797, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2049, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2758, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 2077, which is longer than the specified 2000
+2024-11-16 13:43:33 - langchain_text_splitters.base - WARNING - Created a chunk of size 3134, which is longer than the specified 2000
+2024-11-16 13:43:34 - langchain_text_splitters.base - WARNING - Created a chunk of size 2160, which is longer than the specified 2000
+2024-11-16 13:43:34 - langchain_text_splitters.base - WARNING - Created a chunk of size 5000, which is longer than the specified 2000
+2024-11-16 13:43:34 - langchain_text_splitters.base - WARNING - Created a chunk of size 2532, which is longer than the specified 2000
+2024-11-16 13:43:34 - langchain_text_splitters.base - WARNING - Created a chunk of size 2329, which is longer than the specified 2000
+2024-11-16 13:43:34 - langchain_text_splitters.base - WARNING - Created a chunk of size 2424, which is longer than the specified 2000
+2024-11-16 13:43:34 - langchain_text_splitters.base - WARNING - Created a chunk of size 2042, which is longer than the specified 2000
+2024-11-16 13:43:34 - langchain_text_splitters.base - WARNING - Created a chunk of size 3074, which is longer than the specified 2000
+2024-11-16 13:43:34 - langchain_text_splitters.base - WARNING - Created a chunk of size 2101, which is longer than the specified 2000
+2024-11-16 13:43:34 - langchain_text_splitters.base - WARNING - Created a chunk of size 2157, which is longer than the specified 2000
+2024-11-16 13:43:34 - langchain_text_splitters.base - WARNING - Created a chunk of size 2231, which is longer than the specified 2000
+2024-11-16 13:43:34 - langchain_text_splitters.base - WARNING - Created a chunk of size 2925, which is longer than the specified 2000
+2024-11-16 13:43:34 - langchain_text_splitters.base - WARNING - Created a chunk of size 2475, which is longer than the specified 2000
+2024-11-16 13:43:34 - langchain_text_splitters.base - WARNING - Created a chunk of size 3921, which is longer than the specified 2000
+2024-11-16 13:43:34 - langchain_text_splitters.base - WARNING - Created a chunk of size 2248, which is longer than the specified 2000
+2024-11-16 13:43:34 - langchain_text_splitters.base - WARNING - Created a chunk of size 2030, which is longer than the specified 2000
+2024-11-16 13:43:34 - langchain_text_splitters.base - WARNING - Created a chunk of size 2228, which is longer than the specified 2000
+2024-11-16 13:43:34 - langchain_text_splitters.base - WARNING - Created a chunk of size 2034, which is longer than the specified 2000
+2024-11-16 13:43:34 - langchain_text_splitters.base - WARNING - Created a chunk of size 2186, which is longer than the specified 2000
+2024-11-16 13:43:34 - langchain_text_splitters.base - WARNING - Created a chunk of size 2135, which is longer than the specified 2000
+2024-11-16 13:43:34 - langchain_text_splitters.base - WARNING - Created a chunk of size 3345, which is longer than the specified 2000
+2024-11-16 13:43:34 - langchain_text_splitters.base - WARNING - Created a chunk of size 2123, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2086, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 3402, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2934, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 11195, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2225, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 3020, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2048, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2399, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 4040, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2882, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2993, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2349, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2067, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2097, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2295, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2390, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2784, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2288, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2188, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2162, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2205, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2294, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2480, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2160, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2163, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2795, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 3366, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2702, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2070, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2188, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2062, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 3515, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 3925, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2192, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2133, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2002, which is longer than the specified 2000
+2024-11-16 13:43:35 - langchain_text_splitters.base - WARNING - Created a chunk of size 2095, which is longer than the specified 2000
+2024-11-16 13:43:36 - langchain_text_splitters.base - WARNING - Created a chunk of size 2997, which is longer than the specified 2000
+2024-11-16 13:43:36 - langchain_text_splitters.base - WARNING - Created a chunk of size 2616, which is longer than the specified 2000
+2024-11-16 13:43:36 - langchain_text_splitters.base - WARNING - Created a chunk of size 2729, which is longer than the specified 2000
+2024-11-16 13:43:36 - langchain_text_splitters.base - WARNING - Created a chunk of size 2816, which is longer than the specified 2000
+2024-11-16 13:43:36 - langchain_text_splitters.base - WARNING - Created a chunk of size 2342, which is longer than the specified 2000
+2024-11-16 13:43:36 - langchain_text_splitters.base - WARNING - Created a chunk of size 5577, which is longer than the specified 2000
+2024-11-16 13:43:36 - langchain_text_splitters.base - WARNING - Created a chunk of size 2043, which is longer than the specified 2000
+2024-11-16 13:43:36 - langchain_text_splitters.base - WARNING - Created a chunk of size 2204, which is longer than the specified 2000
+2024-11-16 13:43:36 - langchain_text_splitters.base - WARNING - Created a chunk of size 2133, which is longer than the specified 2000
+2024-11-16 13:43:36 - langchain_text_splitters.base - WARNING - Created a chunk of size 2097, which is longer than the specified 2000
+2024-11-16 13:43:36 - langchain_text_splitters.base - WARNING - Created a chunk of size 2534, which is longer than the specified 2000
+2024-11-16 13:43:36 - langchain_text_splitters.base - WARNING - Created a chunk of size 3141, which is longer than the specified 2000
+2024-11-16 13:43:36 - langchain_text_splitters.base - WARNING - Created a chunk of size 3005, which is longer than the specified 2000
+2024-11-16 13:43:36 - langchain_text_splitters.base - WARNING - Created a chunk of size 2021, which is longer than the specified 2000
+2024-11-16 13:43:36 - langchain_text_splitters.base - WARNING - Created a chunk of size 3397, which is longer than the specified 2000
+2024-11-16 13:43:36 - langchain_text_splitters.base - WARNING - Created a chunk of size 2801, which is longer than the specified 2000
+2024-11-16 13:43:36 - langchain_text_splitters.base - WARNING - Created a chunk of size 2705, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2768, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2439, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2742, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2684, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2199, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2118, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2512, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2812, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 3716, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2220, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2689, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 4316, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2127, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2053, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2418, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2156, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2378, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2900, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2176, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2075, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2620, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2142, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2583, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 3884, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2281, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2169, which is longer than the specified 2000
+2024-11-16 13:43:37 - langchain_text_splitters.base - WARNING - Created a chunk of size 2567, which is longer than the specified 2000
+2024-11-16 13:43:38 - langchain_text_splitters.base - WARNING - Created a chunk of size 3079, which is longer than the specified 2000
+2024-11-16 13:43:38 - langchain_text_splitters.base - WARNING - Created a chunk of size 2128, which is longer than the specified 2000
+2024-11-16 13:43:38 - langchain_text_splitters.base - WARNING - Created a chunk of size 3822, which is longer than the specified 2000
+2024-11-16 13:43:38 - langchain_text_splitters.base - WARNING - Created a chunk of size 2187, which is longer than the specified 2000
+2024-11-16 13:43:38 - langchain_text_splitters.base - WARNING - Created a chunk of size 4777, which is longer than the specified 2000
+2024-11-16 13:43:38 - langchain_text_splitters.base - WARNING - Created a chunk of size 2046, which is longer than the specified 2000
+2024-11-16 13:43:39 - src.ingest - INFO - Ingesting document to vectorstore using chunks.
+2024-11-16 13:43:40 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:43:40 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:43:46 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 13:44:47 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:44:47 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:44:52 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 13:45:52 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:45:53 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:45:59 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 13:46:59 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:47:01 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:47:06 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 13:48:06 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:48:07 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:48:12 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 13:49:13 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:49:13 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:49:19 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 13:50:19 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:50:20 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:50:25 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 13:51:25 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:51:26 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:51:31 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 13:52:31 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:52:32 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:52:37 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 13:53:38 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:53:38 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:53:43 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 13:54:44 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:54:44 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:54:49 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 13:55:50 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:55:50 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:55:59 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 13:57:00 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:57:01 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:57:12 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 13:58:12 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:58:13 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:58:18 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 13:59:18 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:59:19 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 13:59:24 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:00:24 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:00:25 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:00:31 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:01:31 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:01:32 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:01:37 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:02:37 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:02:38 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:02:43 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:03:46 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:03:46 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:03:51 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:04:52 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:04:53 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:04:57 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:05:58 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:05:58 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:06:05 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:07:06 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:07:07 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:07:14 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:08:14 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:08:15 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:08:25 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:09:26 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:09:26 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:09:32 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:10:32 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:10:33 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:10:38 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:11:39 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:11:40 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:11:45 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:12:45 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:12:46 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:12:51 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:13:52 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:13:53 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:13:59 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:15:00 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:15:01 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:15:08 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:16:09 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:16:10 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:16:16 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:17:16 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:17:17 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:17:22 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:18:23 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:18:24 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:18:29 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:19:29 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:19:30 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:19:36 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:20:37 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:20:38 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:20:43 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:21:44 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:21:45 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:21:50 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:22:51 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:22:51 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:22:57 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:23:58 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:23:59 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:24:03 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:25:04 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:25:05 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:25:11 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:26:11 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:26:12 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:26:17 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:27:17 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:27:18 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:27:24 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:28:24 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:28:25 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:28:30 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:29:30 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:29:31 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:29:36 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:30:36 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:30:37 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:30:42 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:31:43 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:31:43 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:31:49 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:32:49 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:32:50 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:32:55 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:33:55 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:33:56 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:34:01 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:35:02 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:35:03 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:35:08 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:36:08 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:36:09 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:36:14 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:37:15 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:37:15 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:37:21 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:38:22 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:38:23 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:38:27 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:39:28 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:39:29 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:39:34 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:40:34 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:40:35 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:40:40 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:41:40 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:41:41 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:41:46 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:42:46 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:42:47 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:42:52 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:43:52 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:43:53 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:43:58 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:44:58 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:44:59 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:45:06 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:46:06 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:46:07 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:46:12 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:47:12 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:47:14 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:47:19 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:48:19 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:48:20 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:48:25 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:49:25 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:49:26 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:49:32 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:50:32 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:50:33 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:50:39 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:52:14 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:52:16 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:52:19 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:53:19 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:53:20 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:53:25 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:54:25 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:54:26 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:54:32 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:55:32 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:55:33 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:55:38 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:56:39 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:56:39 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:56:45 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:57:46 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:57:47 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:57:55 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 14:58:56 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:58:57 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 14:59:02 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:00:02 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:00:03 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:00:08 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:01:09 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:01:10 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:01:16 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:02:16 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:02:17 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:02:22 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:03:23 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:03:24 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:03:28 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:04:29 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:04:30 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:04:35 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:05:35 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:05:36 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:05:41 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:06:41 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:06:42 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:06:47 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:07:48 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:07:48 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:07:53 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:08:54 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:08:54 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:08:59 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:10:00 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:10:00 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:10:05 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:11:06 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:11:06 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:11:11 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:12:12 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:12:12 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:12:17 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:13:17 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:13:19 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:13:24 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:14:25 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:14:26 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:14:30 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:15:32 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:15:33 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:15:38 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:16:44 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:16:44 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:16:50 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:17:50 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:17:51 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:17:56 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:18:56 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:18:58 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:19:03 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:20:04 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:20:04 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:20:12 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:21:13 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:21:14 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:21:22 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:22:23 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:22:24 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:22:32 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:23:32 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:23:33 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:23:39 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:24:39 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:24:40 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:24:45 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:25:46 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:25:46 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:25:51 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:26:52 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:26:53 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:26:57 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:27:58 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:27:59 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:28:03 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:29:04 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:29:05 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:29:11 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:30:11 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:30:12 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:30:18 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:31:18 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:31:19 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:31:24 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:32:24 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:32:25 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:32:31 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:33:31 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:33:32 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:33:37 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:34:37 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:34:38 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:34:44 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:35:44 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:35:45 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:35:50 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:36:51 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:36:51 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:36:57 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:37:58 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:37:59 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:38:05 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:39:06 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:39:07 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:39:13 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:40:14 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:40:15 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:40:19 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:41:20 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:41:21 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:41:27 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:42:28 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:42:30 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:42:39 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:43:40 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:43:41 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:43:46 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:44:47 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:44:48 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:44:53 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:45:53 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:45:54 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:45:59 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:47:00 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:47:00 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:47:07 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:48:07 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:48:08 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:48:13 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:49:14 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:49:14 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:49:21 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:50:21 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:50:22 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:50:27 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:51:27 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:51:28 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:51:33 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:52:34 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:52:35 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:52:39 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:53:40 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:53:41 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:53:45 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:54:46 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:54:47 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:54:52 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:55:52 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:55:53 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:55:58 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:56:58 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:57:00 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:57:05 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:58:05 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:58:06 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:58:12 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 15:59:17 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:59:18 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 15:59:23 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:00:24 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:00:25 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:00:30 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:01:30 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:01:31 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:01:36 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:02:37 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:02:37 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:02:43 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:03:43 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:03:44 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:03:50 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:04:50 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:04:51 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:04:56 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:05:57 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:05:58 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:06:02 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:07:03 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:07:04 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:07:09 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:08:09 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:08:10 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:08:15 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:09:15 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:09:16 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:09:23 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:10:23 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:10:24 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:10:30 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:11:31 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:11:32 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:11:38 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:12:38 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:12:39 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:12:45 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:13:46 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:13:46 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:13:51 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:14:52 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:14:52 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:14:58 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:16:00 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:16:01 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:16:06 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:17:08 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:17:09 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:17:14 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:18:15 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:18:16 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:18:21 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:19:22 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:19:22 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:19:27 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:20:27 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:20:28 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:20:33 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:21:34 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:21:35 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:21:39 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:22:40 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:22:41 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:22:47 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:23:47 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:23:48 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:23:52 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:24:53 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:24:54 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:24:58 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:25:59 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:26:00 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:26:05 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:27:05 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:27:06 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:27:13 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:28:13 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:28:14 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:28:20 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:29:20 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:29:21 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:29:26 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:30:26 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:30:27 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:30:31 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:31:32 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:31:33 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:31:37 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:32:38 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:32:39 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:32:44 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:33:44 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:33:45 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:33:50 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:34:50 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:34:51 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:34:56 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:35:57 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:35:57 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:36:02 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:37:03 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:37:03 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:37:08 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:38:09 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:38:09 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:38:14 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:39:15 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:39:16 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:39:21 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:40:21 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:40:22 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:40:27 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:41:27 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:41:28 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:41:33 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:42:33 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:42:34 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:42:39 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:43:39 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:43:40 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:43:45 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:44:46 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:44:47 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:44:52 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:45:52 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:45:53 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:45:58 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:46:58 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:46:59 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:47:04 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:48:05 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:48:05 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:48:10 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:49:11 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:49:12 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:49:19 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:50:19 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:50:20 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:50:25 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:51:26 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:51:27 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:51:32 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:52:33 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:52:34 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:52:39 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:53:39 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:53:40 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:53:45 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:54:45 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:54:46 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:54:51 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:55:51 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:55:52 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:55:57 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:56:58 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:56:58 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:57:04 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:58:05 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:58:05 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:58:11 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 16:59:11 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:59:12 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 16:59:17 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:00:17 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:00:18 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:00:23 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:01:23 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:01:24 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:01:29 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:02:30 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:02:31 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:02:36 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:03:36 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:03:37 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:03:42 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:04:43 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:04:44 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:04:49 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:05:49 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:05:50 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:05:55 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:06:55 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:06:56 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:07:02 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:08:02 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:08:03 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:08:08 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:09:08 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:09:09 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:09:14 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:10:16 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:10:17 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:10:22 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:11:22 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:11:23 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:11:28 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:12:28 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:12:29 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:12:34 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:13:34 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:13:35 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:13:40 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:14:40 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:14:41 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:14:46 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:15:50 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:15:50 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:15:55 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:16:56 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:16:57 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:17:01 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:18:02 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:18:03 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:18:07 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:19:08 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:19:09 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:19:13 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:20:14 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:20:14 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:20:19 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:21:20 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:21:20 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:21:25 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:22:25 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:22:26 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:22:31 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:23:31 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:23:32 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:23:37 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:24:38 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:24:38 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:24:43 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:25:44 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:25:45 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:25:49 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:26:50 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:26:51 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:26:57 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:27:57 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:27:58 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:28:03 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:29:04 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:29:04 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:29:10 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:30:10 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:30:11 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:30:16 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:31:16 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:31:17 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:31:22 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:32:22 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:32:23 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:32:28 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:33:28 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:33:29 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:33:34 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:34:34 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:34:35 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:34:41 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:35:41 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:35:42 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:35:48 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:36:48 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:36:49 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:36:55 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:37:55 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:37:56 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:38:01 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:39:01 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:39:02 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:39:07 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:40:08 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:40:09 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:40:14 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:41:14 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:41:15 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:41:20 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:42:21 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:42:22 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:42:27 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:43:27 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:43:28 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:43:33 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:44:34 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:44:34 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:44:39 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:45:40 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:45:41 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:45:45 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:46:46 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:46:47 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:46:51 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:47:52 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:47:53 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:47:58 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:48:58 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:48:59 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:49:03 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:50:04 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:50:05 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:50:11 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:51:12 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:51:12 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:51:18 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:52:18 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:52:19 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:52:25 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:53:25 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:53:26 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:53:31 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:54:32 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:54:32 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:54:37 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:55:37 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:55:38 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:55:43 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:56:43 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:56:43 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:56:49 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:57:49 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:57:50 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:57:55 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 17:58:56 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:58:57 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 17:59:02 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:00:02 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:00:03 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:00:07 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:01:08 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:01:09 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:01:14 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:02:14 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:02:15 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:02:20 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:03:20 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:03:21 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:03:26 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:04:26 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:04:27 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:04:32 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:05:32 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:05:33 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:05:38 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:06:38 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:06:39 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:06:44 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:07:45 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:07:45 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:07:51 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:08:51 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:08:52 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:08:57 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:09:57 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:09:58 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:10:03 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:11:03 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:11:04 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:11:09 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:12:09 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:12:10 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:12:15 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:13:16 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:13:16 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:13:21 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:14:21 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:14:22 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:14:26 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:15:27 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:15:27 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:15:32 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:16:33 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:16:33 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:16:38 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:17:38 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:17:39 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:17:44 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:18:44 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:18:45 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:18:50 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:19:50 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:19:51 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:19:56 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:20:56 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:20:57 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:21:02 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:22:02 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:22:03 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:22:07 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:23:08 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:23:09 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:23:14 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:24:14 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:24:15 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:24:20 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:25:20 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:25:21 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:25:26 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:26:26 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:26:27 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:26:31 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:27:32 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:27:33 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:27:38 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:28:38 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:28:39 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:28:44 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:29:45 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:29:45 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 18:29:50 - src.ingest - INFO - 	Chunk Ingested.
+2024-11-16 18:30:51 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+2024-11-16 18:30:51 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+2024-11-16 18:30:51 - langchain_cohere.utils - WARNING - Retrying langchain_cohere.embeddings.CohereEmbeddings.embed_with_retry.<locals>._embed_with_retry in 4.0 seconds as it raised TooManyRequestsError: status_code: 429, body: data=None message="You are using a Trial key, which is limited to 1000 API calls / month. You can continue to use the Trial key for free or upgrade to a Production key with higher rate limits at 'https://dashboard.cohere.com/api-keys'. Contact us on 'https://discord.gg/XW44jPfYJu' or email us at support@cohere.com with any questions".
+2024-11-16 18:30:55 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+2024-11-16 18:30:55 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+2024-11-16 18:30:55 - langchain_cohere.utils - WARNING - Retrying langchain_cohere.embeddings.CohereEmbeddings.embed_with_retry.<locals>._embed_with_retry in 4.0 seconds as it raised TooManyRequestsError: status_code: 429, body: data=None message="You are using a Trial key, which is limited to 1000 API calls / month. You can continue to use the Trial key for free or upgrade to a Production key with higher rate limits at 'https://dashboard.cohere.com/api-keys'. Contact us on 'https://discord.gg/XW44jPfYJu' or email us at support@cohere.com with any questions".
+2024-11-16 18:31:00 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+2024-11-16 18:31:00 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+2024-11-16 18:31:00 - src.ingest - ERROR - Ingestion failed. Error: status_code: 429, body: data=None message="You are using a Trial key, which is limited to 1000 API calls / month. You can continue to use the Trial key for free or upgrade to a Production key with higher rate limits at 'https://dashboard.cohere.com/api-keys'. Contact us on 'https://discord.gg/XW44jPfYJu' or email us at support@cohere.com with any questions"
+2024-11-16 18:37:40 - src.services.embeddings_factory - INFO - Using Cohere embeddings model.
+2024-11-16 18:37:41 - src.services.vectorstore_factory - INFO - Using Milvus
+2024-11-16 18:37:41 - pymilvus.milvus_client.milvus_client - DEBUG - Created new connection using: fa2b572453474d28914bc22cc3606f6d
+2024-11-16 18:37:42 - langchain_milvus.vectorstores.milvus - WARNING - DeprecationWarning: `metadata_field` is about to be deprecated, please set `enable_dynamic_field`=True instead.
+2024-11-16 18:37:43 - pymilvus.milvus_client.milvus_client - DEBUG - Created new connection using: 23775f0bd760465da2d887643495966e
+2024-11-16 18:37:45 - src.services.llm_factory - INFO - Using Cohere chat model.
+2024-11-16 18:38:22 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2024-11-16 18:40:42 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 400 Bad Request"
+2024-11-16 19:02:24 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+2024-11-16 19:02:24 - langchain_cohere.utils - WARNING - Retrying langchain_cohere.embeddings.CohereEmbeddings.embed_with_retry.<locals>._embed_with_retry in 4.0 seconds as it raised TooManyRequestsError: status_code: 429, body: data=None message="You are using a Trial key, which is limited to 1000 API calls / month. You can continue to use the Trial key for free or upgrade to a Production key with higher rate limits at 'https://dashboard.cohere.com/api-keys'. Contact us on 'https://discord.gg/XW44jPfYJu' or email us at support@cohere.com with any questions".
+2024-11-16 19:02:28 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+2024-11-16 19:02:28 - langchain_cohere.utils - WARNING - Retrying langchain_cohere.embeddings.CohereEmbeddings.embed_with_retry.<locals>._embed_with_retry in 4.0 seconds as it raised TooManyRequestsError: status_code: 429, body: data=None message="You are using a Trial key, which is limited to 1000 API calls / month. You can continue to use the Trial key for free or upgrade to a Production key with higher rate limits at 'https://dashboard.cohere.com/api-keys'. Contact us on 'https://discord.gg/XW44jPfYJu' or email us at support@cohere.com with any questions".
+2024-11-16 19:02:33 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 429 Too Many Requests"
+2024-11-16 19:04:59 - src.services.embeddings_factory - INFO - Using Cohere embeddings model.
+2024-11-16 19:04:59 - src.services.vectorstore_factory - INFO - Using Milvus
+2024-11-16 19:05:00 - pymilvus.milvus_client.milvus_client - DEBUG - Created new connection using: 9ff35315ca6a46f6a6ecc368a9dbfb04
+2024-11-16 19:05:00 - langchain_milvus.vectorstores.milvus - WARNING - DeprecationWarning: `metadata_field` is about to be deprecated, please set `enable_dynamic_field`=True instead.
+2024-11-16 19:05:01 - pymilvus.milvus_client.milvus_client - DEBUG - Created new connection using: ec1d0bba5e0a47838e6059342b2cda39
+2024-11-16 19:05:03 - src.services.llm_factory - INFO - Using Cohere chat model.
+2024-11-16 19:05:20 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/embed "HTTP/1.1 200 OK"
+2024-11-16 19:05:23 - httpx - INFO - HTTP Request: POST https://api.cohere.com/v1/chat "HTTP/1.1 200 OK"
